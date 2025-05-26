@@ -1,0 +1,233 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #212529;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+header {
+  background-color: #FFC107; /* Bee-themed yellow */
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #212529;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #212529;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  vertical-align:left;
+  margin-right: 15px;
+}
+
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: #212529;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #212529;
+  color: #FFC107;
+}
+
+nav a.active {
+  background-color: #212529;
+  color: #FFC107;
+}
+
+.page-wrapper {
+  display:flex;
+  flex-direction:column;
+}
+
+.container {
+	flex: 1;
+  display: flex;
+  padding: 1rem;
+  background-color: #fef3c7;
+}
+
+.sidebar {
+  position: sticky;
+  top: 1rem;
+  width: 200px;
+  height: fit-content;
+  background-color: #f9f6e8; /* soft honey tone */
+  border-right: 4px solid #d4af37;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display:block;
+}
+
+.content {
+  flex: 1;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero, .about, .services, .projects, .contact {
+  background-color: #fff;
+  padding: 40px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2, .about h2, .services h2, .projects h2, .contact h2 {
+  color: #212529;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.hero p, .about p, .services p, .projects p, .contact p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.ceo-photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+  margin: 40px 0;
+  width: 600px;
+  height: 800px;
+}
+
+.services ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.services li {
+  background-color: #FFC107;
+  color: #212529;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #212529;
+}
+
+form input, form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid #FFC107;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form input:invalid:focus, form textarea:invalid:focus {
+  border-color: #dc3545; /* Red for invalid input */
+}
+
+form button {
+  background-color: #212529;
+  color: #FFC107;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #FFC107;
+  color: #212529;
+}
+
+footer {
+  background-color: #212529;
+  color: #FFC107;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    margin: 5px;
+    font-size: 1rem;
+  }
+
+  .hero h2, .about h2, .services h2, .projects h2, .contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero p, .about p, .services p, .projects p, .contact p {
+    font-size: 1rem;
+  }
+
+  .ceo-photo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 2px 0;
+  }
+
+}
