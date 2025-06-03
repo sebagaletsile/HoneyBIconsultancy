@@ -19,14 +19,6 @@ header h1 {
   color: #212529;
 }
 
-.logo {
-  width: 80px;
-  height: auto;
-  vertical-align:left;
-  margin-right: 15px;
-}
-
-
 nav {
   margin-top: 15px;
 }
@@ -51,37 +43,6 @@ nav a.active {
   background-color: #212529;
   color: #FFC107;
 }
-
-.page-wrapper {
-  display:flex;
-  flex-direction:column;
-}
-
-.container {
-	flex: 1;
-  display: flex;
-  padding: 1rem;
-  background-color: #fef3c7;
-}
-
-.sidebar {
-  position: sticky;
-  top: 1rem;
-  width: 200px;
-  height: fit-content;
-  background-color: #f9f6e8; /* soft honey tone */
-  border-right: 4px solid #d4af37;
-  padding: 1rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  display:block;
-}
-
-.content {
-  flex: 1;
-  padding: 1rem;
-  background-color: #ffffff;
-}
-
 
 main {
   max-width: 1200px;
@@ -111,10 +72,10 @@ main {
 .ceo-photo {
   max-width: 100%;
   height: auto;
-  border-radius: 30px;
-  margin: 40px 0;
-  width: 600px;
-  height: 800px;
+  border-radius: 10px;
+  margin: 20px 0;
+  width: 300px;
+  height: 200px;
 }
 
 .services ul {
@@ -177,6 +138,8 @@ footer {
   color: #FFC107;
   text-align: center;
   padding: 15px;
+  position: relative;
+  bottom: 0;
   width: 100%;
 }
 
@@ -229,5 +192,4 @@ nav {
     padding: 10px;
     margin: 2px 0;
   }
-
 }
